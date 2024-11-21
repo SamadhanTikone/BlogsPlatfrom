@@ -4,7 +4,7 @@ import About from "./Blogs/About";
 import { createRoot } from 'react-dom/client'
 import NewBlog from "./Blogs/NewBlog";
 import Layout from "./Blogs/Layout";
-import { createBrowserRouter , RouterProvider } from "react-router-dom";
+import { HashRouter , RouterProvider } from "react-router-dom";
 
 import './index.css'
 import Home from './Blogs/Home.jsx';
@@ -17,7 +17,7 @@ import Error from './Blogs/Error.jsx';
 function App() {
 
 
-  const router = createBrowserRouter([
+  const router = HashRouter([
   { path : "/",
    element : <Layout/>,
    errorElement: <Error/>,
